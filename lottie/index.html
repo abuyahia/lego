@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bes-col-start{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 70%;
+            flex: 0 0 70%;
+            align-items: stretch;
+            background: #fff;
+            overflow: hidden;
+            z-index: 99;
+        }
+        .bes-col-start-inn{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            max-width: 540px;
+            margin: 0 auto;
+            align-items: stretch;
+            min-height: 100vh;
+            height: 100%;
+        }
+        .bes-footer {
+            display: flex;
+            justify-content: center;
+        }
+        .footer-content p{
+            font-size: 40px;
+        }
+
+        .bes-main {
+            min-height: 100vh;
+            display: flex;
+            width: 100%;
+        }
+
+        .col-end {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            max-width: 30%;
+            flex: 0 0 30%;
+            overflow: hidden;
+            max-height: 100%;
+            overflow-y: unset;
+            background: #026399;
+        }
+
+        .bes-col-start .bes-header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .bes-main-content img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* .bg-lotie {
+            position: relative;
+            right: 0;
+            max-height: 100%;
+            overflow: hidden;
+        } */
+
+        .bg-lotie {
+            position: absolute;
+            right: 0;
+            max-height: 100%;
+            overflow: hidden;
+        }
+
+        .lottie-player-class-2{
+            right: 0;
+            height: 100%;
+            mix-blend-mode: luminosity;
+            opacity: 0.4;
+            width: 150%;
+            margin-top: -84px !important;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="bes-main">
+    <div class="bes-col-start">
+        <div class="bes-col-start-inn">
+        <div class="bes-header">
+            <img src="texture.svg" />
+        </div>
+        <div class="bes-main-content">
+            <img src="logo.svg" />
+        </div>
+        <div class="bes-footer">
+            <lottie-player src="flying.json"  background="transparent"  speed="0.3"  style="width: 100px; height: 100px;"  loop  autoplay></lottie-player>
+            <div class="footer-content"><p>قريبا …</p></div> 
+        </div>
+    </div>
+    </div>
+
+
+
+    <div class="col-end">
+        <div class="bg-lotie">
+            <!-- <div class="bg-lotie-inn"> -->
+                <script src="js/lottie-player.js"></script>
+                <lottie-player src="lf20_5tvcbbnr.json"  class="lottie-player-class-2" background="transparent"  speed="0.3"  style="right:0;height: 100%;mix-blend-mode: luminosity;opacity: 0.4; "  loop  autoplay></lottie-player>
+            <!-- </div> -->
+        </div>
+    </div>
+</div>
+
+
+    
+ 
+
+</body>
+</html>
